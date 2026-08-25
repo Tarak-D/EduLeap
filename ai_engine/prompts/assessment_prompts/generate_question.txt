@@ -1,0 +1,16 @@
+Generate ONE multiple-choice math question.
+
+Format:
+Question: [clear question]
+A) [option]
+B) [option]
+C) [option]
+D) [option]
+Answer: [correct letter]
+Explanation: [why correct, why wrong answers are wrong]
+
+Rules:
+- Exactly 4 options
+- One clearly correct answer
+- Distractors should reflect common mistakes
+- Match the student's current level

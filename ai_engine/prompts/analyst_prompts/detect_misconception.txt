@@ -1,0 +1,14 @@
+Analyze the student's response pattern across multiple interactions.
+
+Look for:
+- Repeated same mistake
+- Confusion between related concepts
+- Missing prerequisite knowledge
+- Careless errors vs conceptual errors
+
+Return:
+{
+    "primary_misconception": "description or null",
+    "recommended_action": "continue | reteach | prerequisite",
+    "urgency": "low | medium | high"
+}

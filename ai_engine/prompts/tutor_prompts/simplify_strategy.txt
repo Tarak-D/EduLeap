@@ -1,0 +1,9 @@
+The student is struggling. Break this concept into the SIMPLEST possible steps.
+
+Strategy:
+1. Identify the smallest prerequisite needed
+2. Explain ONLY that prerequisite
+3. Use the simplest example possible
+4. Ask if they understand before moving on
+
+Use visual language. Imagine explaining to a 7-year-old.

@@ -1,0 +1,41 @@
+{
+  "subject": "Mathematics",
+  "grade_range": "3-6",
+  "concepts": [
+    {
+      "name": "fractions",
+      "level": 3,
+      "description": "Fractions represent parts of a whole. Numerator (top) = parts you have. Denominator (bottom) = total equal parts.",
+      "examples": "1/2 of a pizza means 1 slice out of 2 equal slices. 3/4 means 3 out of 4 parts.",
+      "common_mistakes": "Confusing numerator and denominator. Thinking bigger denominator means bigger fraction."
+    },
+    {
+      "name": "common denominators",
+      "level": 4,
+      "description": "A common denominator is a shared multiple of two denominators. Needed to add or subtract fractions.",
+      "examples": "For 1/2 and 1/3, common denominators are 6, 12, 18. LCD is 6. 1/2 = 3/6, 1/3 = 2/6.",
+      "common_mistakes": "Forgetting to multiply both numerator AND denominator. Adding denominators instead of finding common ones."
+    },
+    {
+      "name": "fraction addition",
+      "level": 5,
+      "description": "To add fractions: 1) Make denominators the same. 2) Add numerators. 3) Keep denominator. 4) Simplify if needed.",
+      "examples": "1/2 + 1/3 = 3/6 + 2/6 = 5/6. 1/4 + 2/4 = 3/4.",
+      "common_mistakes": "Adding numerators and denominators separately (1/2 + 1/3 ≠ 2/5). Forgetting to find common denominator."
+    },
+    {
+      "name": "equivalent fractions",
+      "level": 4,
+      "description": "Equivalent fractions have the same value but different numerators and denominators. Found by multiplying/dividing both by same number.",
+      "examples": "1/2 = 2/4 = 3/6. 2/3 = 4/6 = 6/9.",
+      "common_mistakes": "Only multiplying numerator. Thinking 1/2 and 2/5 are equivalent because 1+1=2 and 2+3=5."
+    },
+    {
+      "name": "simplifying fractions",
+      "level": 5,
+      "description": "Simplifying means reducing to lowest terms by dividing numerator and denominator by their GCD.",
+      "examples": "4/8 simplifies to 1/2. 6/9 simplifies to 2/3.",
+      "common_mistakes": "Not dividing by the greatest common divisor. Stopping too early."
+    }
+  ]
+}

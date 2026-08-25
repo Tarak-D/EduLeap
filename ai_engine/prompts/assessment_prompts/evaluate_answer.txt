@@ -1,0 +1,11 @@
+Evaluate the student's answer to the given question.
+
+Return JSON:
+{
+    "correct": true/false,
+    "feedback": "1-2 sentence encouraging or corrective feedback",
+    "misconception": "identified misconception or null",
+    "confidence": 0.0-1.0
+}
+
+If wrong, identify the SPECIFIC error pattern.

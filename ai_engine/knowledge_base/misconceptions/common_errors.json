@@ -1,0 +1,18 @@
+{
+  "fraction_addition": {
+    "errors": [
+      {
+        "pattern": "adds numerators and denominators",
+        "example": "1/2 + 1/3 = 2/5",
+        "root_cause": "Does not understand that denominators represent the size of parts, not quantities",
+        "remediation": "Use visual fraction bars. Show that 1/2 + 1/3 cannot be 2/5 because 2/5 is less than 1/2."
+      },
+      {
+        "pattern": "ignores common denominator",
+        "example": "1/2 + 1/4 = 2/6",
+        "root_cause": "Does not understand that parts must be the same size to add",
+        "remediation": "Use pizza/cake analogy. You can't add half a pizza and quarter a pizza without cutting into same-sized slices."
+      }
+    ]
+  }
+}

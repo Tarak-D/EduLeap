@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: eduleap
+      POSTGRES_PASSWORD: eduleap123
+      POSTGRES_DB: eduleap_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://eduleap:eduleap123@postgres:5432/eduleap_db
+      - NVIDIA_NIM_API_KEY=${NVIDIA_NIM_API_KEY}
+      - NVIDIA_NIM_BASE_URL=https://integrate.api.nvidia.com/v1
+    volumes:
+      - ./backend:/app
+      - ./ai_engine:/app/ai_engine
+    depends_on:
+      - postgres
+      - chroma
+
+  chroma:
+    image: chromadb/chroma:latest
+    ports:
+      - "8001:8000"
+    volumes:
+      - chromadata:/chroma/chroma
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:
+  chromadata:
