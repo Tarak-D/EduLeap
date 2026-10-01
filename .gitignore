@@ -1,4 +1,18 @@
 Folder structure and code request.docx
+
+# Local documentation
+Folder structure and code request.docx
+
+# Data pipeline raw datasets
+ai_engine/data_pipeline/ednet_raw/
+
+# Generated data pipeline outputs
+ai_engine/data_pipeline/outputs/
+
+# macOS metadata
+.DS_Store
+._*
+
 # Environment & Secrets
 
 .env
